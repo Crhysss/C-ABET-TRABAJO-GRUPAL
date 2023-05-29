@@ -56,9 +56,9 @@ int main(){
 void opcion1(int matriz2017[7][2],int matriz2018[7][2], int matriz2019[7][2], int matriz2020[7][2],int matriz2021[7][2]){
     int i, j;
     int mayor = 0;
-    int añoMayor = 0;
+    int anoMayor = 0;
     int sumas[5] = {0};
-    int años[5] = {2017, 2018, 2019, 2020, 2021};
+    int anos[5] = {2017, 2018, 2019, 2020, 2021};
 //dentro del vector sumas se registra la suma de cada matriz para despues entrar a la condición IF
     for (i = 0; i < 7; i++) {
         for (j = 0; j < 2; j++) {
@@ -72,10 +72,10 @@ void opcion1(int matriz2017[7][2],int matriz2018[7][2], int matriz2019[7][2], in
     for (i = 0; i < 5; i++) {
         if (sumas[i] > mayor) {
             mayor = sumas[i];
-            añoMayor = años[i];
+            anoMayor = anos[i];
         }
     }
-    printf("El a\xf1o en donde m\xE1s estudiantes ingresaron a la universidad fue %d.\n", añoMayor);
+    printf("El a\xf1o en donde m\xE1s estudiantes ingresaron a la universidad fue %d.\n", anoMayor);
     //el quetenga suma mayor es el año en donde mas estudiantes entraron
 }
 void opcion2(int matriz2021[7][2]) {
@@ -102,10 +102,10 @@ void opcion2(int matriz2021[7][2]) {
 void opcion3(int matriz2017[7][2], int matriz2018[7][2], int matriz2019[7][2], int matriz2020[7][2], int matriz2021[7][2]){
     int i,j;
     int mayor=0;
-    int añoMayor=0;
+    int anoMayor=0;
     //al igual que en la funcion opcion1 se ocupa el vector sumas y años para determinar en que año entraron más estudiantes
     int sumas[5] = {0};
-    int años[5] = {2017, 2018, 2019, 2020, 2021};
+    int anos[5] = {2017, 2018, 2019, 2020, 2021};
     for(i=0;i<1;i++){
         for(j=0;j<1;j++){
             sumas[0] += matriz2017[i][j];
@@ -118,8 +118,8 @@ void opcion3(int matriz2017[7][2], int matriz2018[7][2], int matriz2019[7][2], i
     for (i = 0; i < 5; i++) {
         if (sumas[i] > mayor) {
             mayor = sumas[i];
-            añoMayor = años[i];
+            anoMayor = anos[i];
         }
     }
-    printf("El a\xf1o en donde m\xE1s estudiantes ingresaron a la carrera de Ing. Software fue: %d\n", añoMayor);
+    printf("El a\xf1o en donde m\xE1s estudiantes ingresaron a la carrera de Ing. Software fue: %d\n", anoMayor);
 }
